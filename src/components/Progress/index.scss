@@ -1,0 +1,52 @@
+.progress {
+  position: relative;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+  }
+
+  &--color-purple[value] {
+    &::-webkit-progress-value {
+      background-image: -webkit-linear-gradient(left,#623aa2, #f97794 100% );
+    }
+  }
+  &--color-pink[value]{
+    &::-webkit-progress-value {
+      background-color: #801143 ;
+    }
+  }
+}  
+
+progress[value] {
+  width: 35em;
+  height: 2em;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+
+  &::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  &::-webkit-progress-value {
+    border-radius: 10px;
+    background-size: 200% 100%;
+  }
+
+  @media only screen and(max-width: 1024px) {
+    width: 30em;
+  }
+  @media only screen and(max-width: 768px) {
+    width: 25em;
+  }
+  @media only screen and(max-width: 480px) {
+    width: 20em;
+  }
+  @media only screen and(max-width: 320px) {
+    width: 18em;
+  }
+}

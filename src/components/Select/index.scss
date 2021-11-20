@@ -1,0 +1,30 @@
+.select-wrapper {
+  @media only screen and(max-width: 1024px) {
+    width: 100%;
+  }
+  select {
+    width: 8em;
+    height: 2em;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #39b1c6;
+
+    @media only screen and(max-width: 1024px) {
+      display: block;
+      width: 30em;
+      margin: 0 auto;
+    }
+    @media only screen and(max-width: 768px) {
+      width: 25em;
+    }
+    @media only screen and(max-width: 480px) {
+      width: 20em;
+    }
+    @media only screen and(max-width: 320px) {
+      width: 18em;
+    }
+  }
+}
